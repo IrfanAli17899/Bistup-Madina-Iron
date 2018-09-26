@@ -21,12 +21,12 @@
   <div class="container-fluid Top-Bar">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 topData">
+        <div class="col-sm-6 col-6 topData">
           <strong>
             <i class="fa fa-phone"></i>
             Call Us</strong> 021 - 32778680 | 021 - 32762348
         </div>
-        <div class="col-sm-6 topData">
+        <div class="col-sm-6 col-6 topData">
           <strong>
             <i class="fas fa-clock"></i>
             Mon - Sat</strong>
@@ -35,15 +35,18 @@
       </div>
     </div>
   </div>
-
   <div class="container-fluid nav-fluid">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-4 logo-cntainer">
-          <img class="logo" src="https://pngimg.com/uploads/google/google_PNG19644.png" alt="Logo">
-        </div>
-        <div class="col-sm-8 nav-container">
-          <nav class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
             <a class="nav-link" href="index.html">Home
             </a>
             <a class="nav-link" href="AboutUs.html">About Us</a>
@@ -70,14 +73,11 @@
             </div>
             <a class="nav-link" href="ContactUS.html">Contact US</a>
             <a class="nav-link " href="ProfileDownload.php?file=Testing.txt">Download Profile</a>
-          </nav>
-        </div>
-      </div>
+          </div>
+      </nav>
+
     </div>
   </div>
-
-
-
 
 
 
@@ -130,7 +130,7 @@
           To be the leading business by specializing in the field of Bars, Girders,
           Sheets and other products in the region by achieving customer satisfaction & maximizing values.
         </p>
-        <a class="myBtn"  href="AboutUs.html">Read More</a>
+        <a class="myBtn" href="AboutUs.html">Read More</a>
       </div>
     </div>
   </div>
@@ -138,187 +138,168 @@
   <div class="continer-fluid profileBar">
     <div class="container">
       <h3>
-          For More infomation about our product and services Please Download our profile.
-        </h3>
-      <a  id="dp" style="display:none" href="ProfileDownload.php?file=Testing.txt">Download Profile</a>
-    <button class="btnRgt dpBtn myBtn" type="button" onclick="document.querySelector('#dp').click()">Download Profile</button>
+        For More infomation about our product and services Please Download our profile.
+      </h3>
+      <a class="btnRgt myBtn" id="dp" href="ProfileDownload.php?file=Testing.txt">Download Profile</a>
     </div>
   </div>
 
-  <!-- <div class="wrapper coloured " style="background-color: #00004d">
-    <article class="hoc cta clear">
-      <h6 class="three_quarter first"></h6>
-      <footer class="one_quarter">
-        
-      </footer>
-    </article>
-  </div> -->
-  <div class="wrapper row3">
-    <main class="hoc container clear">
-
-      <section>
-        <div class="sectiontitle" style="margin-bottom: 0px">
-          <h6 class="heading" style=" font-size: 30px; ">CEO Massage </h6>
-          <!--<p>Neque vel malesuada ultrices mi est vulputate ex sit amet</p> -->
+  <div class="container-fluid msgContainer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-12 ceo-con">
+          <h6 class="">CEO Massage</h6>
+          <img class="ceo-pic" src="images/demo/348x261.png" alt="">
+          <div class="ceo-msg">
+              <p>
+                  Madina Iron is a family for iron sheets / coils
+                  and other iron flat and rolled products and sheets ,
+                  bar and girders. We are in this business for over 25 years
+                  and are very well reputed among Producers of iron
+                  flat and rolled products in the national market. In Pakistan,
+                  we are one of the largest traders and are very dependable
+                  source of supply to other local traders and consumers.
+                </p>
+                <br>
+                <p>
+                  We provide only the best quality,
+                  most cost-effective materials to our
+                  customers. Always pursuing and delivering value,
+                  with our product , is our focus today.
+                  Being involved with our customers on a daily basis,
+                  allows us to continuously monitor the market at explore
+                  solutions that will have a positive impact their bottom line.
+                </p>
+          </div>
+          
         </div>
-        <hr class="btmspace-80 WeightSheetHeadingUnderline" style="width: 10%;text-align: center">
-
-        <ul class="nospace group overview">
-          <li class="one_third">
-            <figure>
-              <img src="images/demo/348x261.png" alt="">
-            </figure>
-            <p>CEO Detail Here</p>
-            <p>second Line</p>
-            <p>Third Line</p>
-
-          </li>
-
-          <li class="one_third CeoMessageDetail">
-            <div class="sectiontitle CeoMessageParagraph">
-              <br>
-              <p>
-                Madina Iron is a family for iron sheets / coils
-                and other iron flat and rolled products and sheets ,
-                bar and girders. We are in this business for over 25 years
-                and are very well reputed among Producers of iron
-                flat and rolled products in the national market. In Pakistan,
-                we are one of the largest traders and are very dependable
-                source of supply to other local traders and consumers.
-              </p>
-              <br>
-              <p>
-                We provide only the best quality,
-                most cost-effective materials to our
-                customers. Always pursuing and delivering value,
-                with our product , is our focus today.
-                Being involved with our customers on a daily basis,
-                allows us to continuously monitor the market at explore
-                solutions that will have a positive impact their bottom line.
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid con text-center">
+    <h1 class="heading">Our Clients</h1>
+  </div>
+  <div class="container-fluid text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/demo/249x100.png" alt="">
+        </div>
+        <div class="col-sm-3">
+          <img src="images/demo/249x100.png" alt="">
+        </div>
+        <div class="col-sm-3">
+          <img src="images/demo/249x100.png" alt="">
+        </div>
+        <div class="col-sm-3">
+          <img src="images/demo/249x100.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container-fluid con text-center">
+    <h6 class="heading">Our Top Selling Product </h6>
+</div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row productContainer">
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/Cold_Twisted_Bar(TOR).html">
+              <img src="images/Product/Cold_Twisted_Bar_2.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >Cold Twisted Bar TOR</h6>
+              <p>TOR STEEL is produced from mild steel billets with limited carbon content. Each bar is cold-twisted
+                individually.
+                <a class="myBtn" href="Products/Cold_Twisted_Bar(TOR).html" class="myBtn">View All Products</a>
               </p>
             </div>
-          </li>
-        </ul>
-      </section>
-      <div class="clear"></div>
-      <hr class="btmspace-80" style="margin-bottom: 0px;">
-    </main>
-  </div>
-
-  <div class="wrapper row2" style="background-color:#cc0000 ;">
-    <section>
-      <div class="sectiontitle OurClientHeading" style="margin-bottom: 0px">
-        <h6 class="heading" style=" font-size: 30px; ">Our Client </h6>
-        <p>Something About Client</p>
-      </div>
-      <figure class="hoc container clear clients">
-        <ul class="nospace group">
-          <li class="one_quarter first"><a href="#"><img src="images/demo/249x100.png" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/249x100.png" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/249x100.png" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/249x100.png" alt=""></a></li>
-        </ul>
-      </figure>
-    </section>
-  </div>
-
-  <div class="wrapper row3">
-    <main class="hoc container clear">
-      <hr class="btmspace-80">
-      <section>
-        <div class="sectiontitle" style="margin-bottom: 0px;">
-          <h6 class="heading" style=" font-size: 30px; ">Our Top Selling Product </h6>
+          </div>
         </div>
-        <hr class="btmspace-80 WeightSheetHeadingUnderline" style="width: 15%;text-align: center">
-
-        <ul class="nospace group overview">
-          <li class="one_third">
-            <figure><a href="Products/Cold_Twisted_Bar(TOR).html"><img src="images/Product/Cold_Twisted_Bar_2.jpg" alt=""
-                  height="0" width="0"></a>
-              <figcaption>
-                <h6 class="heading">Cold Twisted Bar TOR</h6>
-                <p>TOR STEEL is produced from mild steel billets with limited carbon content. Each bar is cold-twisted
-                  individually.
-                  <a href="Products/Cold_Twisted_Bar(TOR).html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a href="Products/Equal_Angles.html"><img src="images/Product/equal_angle.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">MS Equal Angle</h6>
-                <p>Steel angle are applicable in various fields, including infrastructure and industrial plants. They
-                  are easy to be installed and taken apart after drilled and/ or rolled.
-                  <a href="Products/Equal_Angles.html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a href="Products/Flat_Bars.html"><img src="images/Product/Flat_Bar_1.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Flat Bar</h6>
-                <p>Flat bars are applicable in various fields.including infrastructure and industrial plants. They are
-                  easy to be installed and taken apart after drilled and / or rolled.
-                  <a href="Products/Flat_Bars.html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a href="Products/G_I_Sheets.html"><img src="images/Product/GI_sheet_my.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">GI Sheets</h6>
-                <p>Galvanized sheets are zinc coated cold rolled sheets or coils manufacture as per IS 513/1994. Plain
-                  galvanized sheets are used for automotive body building, panels, electrical appliances like
-                  refrigerator, washing machine, and use for advertisement panels, etc.
-                  <a href="Products/G_I_Sheets.html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a href="Products/Girder.html"><img src="images/Product/girder1.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Girder</h6>
-                <p>I beam are mostly applicable as frames of industrial plants. We supply numerous specifications and
-                  customized process, please contact us for more details.
-                  <a href="Products/Girder.html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-            <figure><a href="Products/Hot_Rolled_Channel.html"><img src="images/Product/Hot_Rolled_Channels_1.jpg" alt=""></a>
-              <figcaption>
-                <h6 class="heading">Hot Rolled Channels</h6>
-                <p>Steel channels, as in rolled steel C sections, have many uses. They are commonly used in all
-                  structural applications where other shapes (I, T, etc.) are used.
-                  <a href="Products/Hot_Rolled_Channel.html"></a>
-                </p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="one_third">
-
-
-            <footer>
-              <a class="btn" href="Products/All_Products.html" style="background-color: #cc0000 ">Click here to Check
-                all Products
-              </a>
-            </footer>
-          </li>
-        </ul>
-      </section>
-      <div class="clear"></div>
-    </main>
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/Equal_Angles.html">
+              <img src="images/Product/equal_angle.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >MS Equal Angle</h6>
+              <p>Steel angle are applicable in various fields, including infrastructure and industrial plants. They
+                are easy to be installed and taken apart after drilled and/ or rolled.
+                <a href="Products/Equal_Angles.html" class="myBtn">View All Products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/Flat_Bars.html">
+              <img src="images/Product/Flat_Bar_1.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >Flat Bar</h6>
+              <p>Flat bars are applicable in various fields.including infrastructure and industrial plants. They are
+                easy to be installed and taken apart after drilled and / or rolled.
+                <a href="Products/Flat_Bars.html" class="myBtn">View All Products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/G_I_Sheets.html">
+              <img src="images/Product/GI_sheet_my.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >GI Sheets</h6>
+              <p>
+                galvanized sheets are used for automotive body building, panels, electrical appliances like
+                refrigerator, washing machine, and use for advertisement panels, etc. manufacture as per IS 513/1994.
+                <a href="Products/G_I_Sheets.html" class="myBtn">View All Products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/Girder.html">
+              <img src="images/Product/girder1.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >Girder</h6>
+              <p>I beam are mostly applicable as frames of industrial plants. We supply numerous specifications and
+                customized process, please contact us for more details.
+                <a href="Products/Girder.html" class="myBtn">View All Products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="product">
+            <a href="Products/Hot_Rolled_Channel.html">
+              <img src="images/Product/Hot_Rolled_Channels_1.jpg" alt="">
+            </a>
+            <div class="text">
+              <h6 >Hot Rolled Channels</h6>
+              <p>Steel channels, as in rolled steel C sections, have many uses. They are commonly used in all
+                structural applications where other shapes (I, T, etc.) are used.
+                <a href="Products/Hot_Rolled_Channel.html" class="myBtn">View All Products</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <a class="btn" href="Products/All_Products.html" style="background-color: #cc0000 ">Click here to Check
+    all Products
+  </a>
+
 
   <div class="wrapper row4" style="background-color: #00004d">
     <footer id="footer" class="hoc clear">
       <div class="one_quarter first">
-        <h6 class="heading">Address</h6>
+        <h6 class="">Address</h6>
         <ul class="nospace btmspace-30 linklist contact">
           <li><i class="fas fa-map-marker-alt"></i>
             <address>
@@ -335,7 +316,7 @@
         </ul>
       </div>
       <div class="one_quarter">
-        <h6 class="heading">Our Top Products</h6>
+        <h6 class="">Our Top Products</h6>
         <ul class="nospace linklist">
           <li><a href="Products/Cold_Twisted_Bar(TOR).html">Cold Twisted Bar TOR</a></li>
           <li><a href="Products/Equal_Angles.html">MS Equal Angle</a></li>
@@ -345,7 +326,7 @@
         </ul>
       </div>
       <div class="one_quarter">
-        <h6 class="heading">Reach Us At</h6>
+        <h6 class="">Reach Us At</h6>
         <div class="row1">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d905.005734119341!2d67.00126743209908!3d24.863066205032975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e1e6722d0f5%3A0xe156eaadb355b826!2sMadina+Iron!5e0!3m2!1sen!2s!4v1535472893190"
             width="100%" height="200" frameborder="0" style="border:0" allowfullscreen>
@@ -353,7 +334,7 @@
         </div>
       </div>
       <div class="one_quarter">
-        <h6 class="heading">Contact Us</h6>
+        <h6 class="">Contact Us</h6>
         <p class="nospace btmspace-15">Fill The Given Form , We Will Get In Touch With You In A Bit.</p>
         <form method="post" action="#">
           <fieldset>

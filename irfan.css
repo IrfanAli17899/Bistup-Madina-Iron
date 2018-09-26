@@ -1,6 +1,13 @@
 *{
     color: rgb(31, 31, 31);
 }
+body{
+    width: 100vw;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x:hidden; 
+}
 .topData{
     text-align: center;
     padding-top: 10px;
@@ -9,32 +16,31 @@
 .topData strong{
     display: block;
 }
-.nav-fluid{
-    background: rgb(247, 247, 255);
-}
-.nav-container{
-    text-align: center;
-    padding: 0 ;
-    margin-top: 14px;
 
+.nav-fluid{
+    background: #f8f9fa!important;
 }
 .navbar{
-    padding: 0;
     text-align: center;
-    justify-content: unset;
+    border: 1px solid red;
+}
+.navbar-nav {
+    margin: auto !important;
+    text-align: center;
+    border: 1px solid red;
+    width: 80%;
 }
 .nav-link{
-    margin: 0;
-    width: 150px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
     white-space: nowrap;
-    color: rgb(46, 46, 46);
+    color: rgb(46, 46, 46) !important;
     transition: all ease-out 0.5s;
 }
-.logo-cntainer{
-    padding: 5px;
-}
+
 .logo{
-    width: 50%;
+    width: 110px;
 }
 .nav-link:hover{
     background: rgb(240, 240, 240);
@@ -71,11 +77,16 @@
     transform: scaleX(1);
     transition: transform ease-in-out 1s; 
 }
+.drop-box{
+    width: 100%;
+}
 .drop-box>.dropdown-menu{
-    transform: translateY(20px);
+    transform: translateY(20px) translateX(-50%);
     display: block;
     visibility: hidden;
     opacity:0;
+    position: absolute;
+    left: 50%;
     border-top: 5px solid rgb(189,26,26);
     transition: all ease-in-out 500ms;
 }
@@ -86,7 +97,7 @@
     visibility: visible;
     opacity:1;  
     color: rgb(27, 27, 134);
-    transform: translateY(0px);
+    transform: translateY(0px) translateX(-50%);
     transition: all ease-in-out 500ms;
 }
 .drop-box .dropdown-item::after{
@@ -104,6 +115,9 @@
     transform: scaleX(1);
     transition: transform ease-in-out 1s;
 }
+
+
+
 
 .VisionSection{
     margin: 20px 0px;
@@ -161,7 +175,7 @@
     transition: transform ease-in-out 500ms
 }
 .myBtn:hover::before{
-    transform: scale(1,1);
+        transform: scale(1,1);
     transition: transform ease-in-out 500ms
 }
 .myBtn:hover::after{
@@ -178,10 +192,158 @@
     color: whitesmoke;
 
 }
-.profileBar button{
+.profileBar a{
     background: rgb(21, 21, 117);
     border: 1px solid whitesmoke;
 }
 .profileBar button:hover{
     cursor: pointer;
 }
+
+.ceo-con img{
+    width: 30vw;
+    float: left;
+    margin: 10px;
+}
+.ceo-msg{
+    text-align: justify;
+}
+.ceo-msg p{
+    padding: 20px;
+}
+.ceo-con h6{
+    font-weight: normal;
+    margin: 10px 0px;
+    font-size: 30px;
+}
+
+.ceo-pic{
+    width: 80%;
+    margin-top:20px; 
+}
+.msgContainer{
+    margin: 20px 0px;
+}
+
+
+.product{
+    margin: 10px 0px;
+    background: rgb(46, 46, 46);
+    box-shadow: 0px 0px 10px  #9c9c9c
+}
+.product a{
+    display: block;
+}
+
+.product a img {
+    width: 100%;
+    transition: all  500ms;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    transition: all 1s;
+}
+
+.text p{
+    font-size: 0.8em;
+    color: white;
+    transform: translateY(10px);
+    transition: transform ease-out 0.5s;
+
+}
+.text h6{
+    font-size: 1.2em;
+    color: white;
+    transform: translateX(-50px);
+    transition: transform ease-out 0.5s;
+}
+.text a{
+    transform: translateX(30px);
+    z-index:1111;
+    transition: transform ease-out 0.5s;
+}
+.product:hover .text{
+    opacity:1;
+    transition: all 1s;
+}
+.product:hover a>img{
+    opacity:0.3;
+    transition: all 1s;
+}
+.product:hover .text>h6{
+    transform: translateX(0px);
+    cursor: pointer;
+    transition: transform ease-out 0.5s;
+}
+.product:hover .text>p{
+    transform: translate(0px);
+    cursor: pointer;
+    transition: transform ease-out 0.5s;
+}
+.product:hover .text a{
+    transform: translate(0px);
+    transition: transform ease-out 0.5s;
+}
+
+.product::before{
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    left: 1.25em;
+    right:1.25em;
+    bottom:1.25em;
+}
+
+/* .product::before{
+    background: pink;
+    transform: scaleX(0);
+    transition: transform ease-out 1s;
+}
+.product:hover::before{
+    transform: scaleX(1);
+    transition: transform ease-out 1s;
+} */
+.con{
+    margin: 20px 0px;
+}
+
+.heading{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(189, 26, 26);
+
+}
+.heading::before,.heading::after{
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+}
+.heading::after{
+    background: rgb(21, 21, 117);
+    width: 100vw;
+    left: 50%;
+    top: 0;
+    z-index:-2;
+    transform: translateX(-50%)
+
+}
+.heading::before{
+    background: rgb(255, 255, 255);
+    left: -20px;
+    right: -20px;
+    z-index:-1;
+}
+@media (max-width:768px){
+    .ceo-pic{
+        width: 40vw;
+    }
+}
+
+
+
