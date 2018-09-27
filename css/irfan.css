@@ -468,6 +468,21 @@ footer .myBtn{
     font-size: 13px;
 }
 
+.contact_form input ,.contact_form textarea ,.contact_form .myBtn{
+    margin: 5px auto;
+    display: block;
+    width:30vw;
+}
+.contact_form label{
+    position: relative;
+    display: block;
+    text-align: left;
+    margin: auto;
+    left: -8.5%;
+    width: 150px;
+    transform: translateX(-8.5%)
+}
+
 
 
 
