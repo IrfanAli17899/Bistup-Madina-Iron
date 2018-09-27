@@ -442,6 +442,23 @@ footer .myBtn{
 }
 
 
+.adImg{
+    width: 25vw;
+    margin-right:50px; 
+    float: left;
+}
+.note{
+    display: inline-block;
+    text-align: justify;
+    padding: 50px;
+}
+.ws-con{
+    margin: 40px 0px;
+
+}
+.ws-con h4{
+    margin: 50px 0px;
+}
 
 
 
