@@ -43,6 +43,8 @@ body{
 
 .logo{
     width: 110px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 3px;
 }
 .nav-link:hover{
     background: rgb(240, 240, 240);
@@ -342,7 +344,7 @@ height:100%;
     position: absolute;
 }
 .heading::after{
-    background: rgb(27, 27, 134);
+    background: rgb(23, 23, 121);
     width: 100vw;
     left: 50%;
     top: 0;
@@ -517,8 +519,8 @@ height:100%;
     text-decoration: none;
     color: white;
     color: rgb(27, 27, 134);
-    
 }
+
 /* .cb{
     background: rgb(189, 26, 26);
 }
@@ -553,10 +555,18 @@ height:100%;
 .allCon .product .text{
     font-size: 13px;
 }
+.frm-con{
+    width: 40vw;
+    margin: 10px auto;
+    padding-top: 20px;
+    border: 1px solid rgb(212, 212, 212);
+    background: rgb(241, 241, 241);
+}
 
 .contact_form input ,.contact_form textarea ,.contact_form .myBtn{
     margin: 5px auto;
     display: block;
+    margin-bottom: 30px;
     width:30vw;
 }
 .contact_form label{
@@ -564,13 +574,30 @@ height:100%;
     display: block;
     text-align: left;
     margin: auto;
-    left: -8.5%;
+    left: -20.5%;
     width: 150px;
     transform: translateX(-8.5%)
 }
+.contact_form input[type=text],.contact_form input[type=email],.contact_form textarea{
+    border: none;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    height: 40px;
+    background: transparent;
+}
+.contact_form input:focus,.contact_form textarea:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(27, 27, 134);
+    transition: all 0.5s;
+}
+.contact_form button{
+    border:none;
+}
 
 
-
+.des p{
+    text-align: justify;
+    padding: 150px;
+}
 
 
 
@@ -598,6 +625,14 @@ height:100%;
     .contact-fluid{
         font-size: 1rem;
     }
+    .frm-con{
+        width: 100vw;
+    }
+    .contact_form input ,.contact_form textarea ,.contact_form .myBtn{
+       
+        width:80vw;
+    }
+    
 }
 
 
@@ -608,6 +643,13 @@ height:100%;
     }
     .text{
         font-size: 12px !important;
+    }
+    .frm-con{
+        width: 70vw;
+    }
+    .contact_form input ,.contact_form textarea ,.contact_form .myBtn{
+       
+        width:50vw;
     }
 }
 
