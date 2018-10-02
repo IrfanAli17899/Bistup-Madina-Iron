@@ -11,6 +11,7 @@ body{
     margin: 0;
     overflow-x:hidden; 
 }
+
 .topData{
     text-align: center;
     padding-top: 10px;
@@ -603,6 +604,39 @@ height:100%;
 
 
 
+/* Carousel
+----------------------------------- */
+#carouselBeadManRedding {
+    background-color: #000;
+}
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out 1s;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+.carousel.carousel-fade .carousel-item:first-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease-out 1s;
+}
+.carousel.carousel-fade .carousel-item:second-child {
+    top: auto;
+    position: relative;
+    transition: opacity ease-out 1s;
+}
+.carousel-item .img-fluid {
+    margin: 0 auto;
+}
+.carousel img {
+    opacity: 1;
+    filter: alpha(opacity=50);
+}
 
 
 
