@@ -559,39 +559,68 @@ height:100%;
 .frm-con{
     width: 40vw;
     margin: 10px auto;
-    padding-top: 20px;
+    text-align: justify;
+    padding: 50px 0px;
     border: 1px solid rgb(212, 212, 212);
     background: rgb(241, 241, 241);
 }
 
-.contact_form input ,.contact_form textarea ,.contact_form .myBtn{
+.contact_form input  ,.contact_form .myBtn{
     margin: 5px auto;
-    display: block;
     margin-bottom: 30px;
+    display: block;
     width:30vw;
 }
 .contact_form label{
-    position: relative;
     display: block;
-    text-align: left;
-    margin: auto;
-    left: -20.5%;
-    width: 150px;
-    transform: translateX(-8.5%)
+    position: relative;
+    left: 15%;
+    transform: translateY(-250%);
+    color: rgb(77, 75, 75);
+    transition: all ease-out 0.3s;
+
 }
-.contact_form input[type=text],.contact_form input[type=email],.contact_form textarea{
+
+.input+label+.border{ 
+    height: 4px;
+    width: 30vw;
+    margin: auto;
+    background: rgb(14, 14, 104);
+    display: block;
+    position: relative;
+    transform: translateY(-1600%) scale(0);
+    transition: transform ease-out 0.2s;
+}
+
+.input:focus+label+.border{ 
+    transform: translateY(-1600%) scale(1);
+    transition: transform ease-out 0.2s;
+}
+
+
+.input{
     border: none;
     border-bottom: 1px solid rgb(216, 216, 216);
     height: 40px;
     background: transparent;
 }
-.contact_form input:focus,.contact_form textarea:focus{
+.input:focus,.input:valid{
     outline: none;
-    border-bottom: 1px solid rgb(27, 27, 134);
     transition: all 0.5s;
 }
+.input:focus + label,.input:valid + label{
+    transform: translate(-3%,-400%);
+    transition: all ease-out 0.3s;
+}
+
 .contact_form button{
     border:none;
+}
+.contact_form button:hover{
+    cursor: pointer;
+}
+.contact_form label:hover{
+    cursor: text;
 }
 
 
@@ -654,6 +683,8 @@ height:100%;
     background: rgb(241, 241, 241);
     border: 1px solid rgb(212, 212, 212);
     color:rgb(21, 21, 117) !important;
+    font-weight: bold;
+
 }
 .nav-active:hover::before{
     transform: scaleX(0); 
