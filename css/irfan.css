@@ -465,6 +465,9 @@ height:100%;
     background: #eeeeee;
     padding: 20px 0px;
 }
+.links ul{
+    padding: 0;
+}
 .links ul li{
     display: inline-block;
     list-style: none;
@@ -485,6 +488,44 @@ height:100%;
     background: rgb(219, 219, 219);
     transition: all 1s;
 }
+
+.regbody div{
+    float: left;
+}
+.regbody ul{
+    padding: 0;
+}
+
+.regbody div ul li{
+    list-style-type: square;
+    text-align: justify;
+    font-size: 14px;
+    color: #363636;
+
+}
+.mb-0 button{
+    color: white;
+    color: #363636;
+
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    width: 100%;
+    
+}
+.mb-0 button:hover{
+    text-decoration: none;
+    color: white;
+    color: rgb(27, 27, 134);
+    
+}
+/* .cb{
+    background: rgb(189, 26, 26);
+}
+.card-header{
+    background: rgb(27, 27, 134);
+
+} */
 
 
 .adImg{
